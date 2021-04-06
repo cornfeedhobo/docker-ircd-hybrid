@@ -1,0 +1,14 @@
+RANDFILE                = $ENV::HOME/.rnd
+
+[ req ]
+prompt                  = no
+distinguished_name	= req_distinguished_name
+
+[ req_distinguished_name ]
+countryName                     = UN
+stateOrProvinceName             = Milky Way
+localityName                    = Earth
+organizationName                = IRCD-Hybrid services
+organizationalUnitName          = IRCD-Hybrid services
+commonName                      = Debian
+emailAddress                    = root@localhost

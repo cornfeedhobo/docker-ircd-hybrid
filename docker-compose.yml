@@ -2,6 +2,7 @@ version: "2"
 
 services:
   hybrid:
+    # image: "cornfeedhobo/ircd-hybrid"
     build: .
     ports:
       - "6665:6665"
@@ -9,4 +10,6 @@ services:
       - "6667:6667"
       - "6668:6668"
       - "6669:6669"
-      - "6697:6697"
+    volumes:
+      - "./home/ircd/etc:/home/ircd/etc"
+      - "./home/ircd/var:/home/ircd/var"

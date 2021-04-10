@@ -1,9 +1,17 @@
 # docker-ircd-hybrid
 
-## Instructions
+IRCD-Hybrid
 
-```bash
-docker-compose build
-docker-compose up -d
-telnet 127.0.0.1 6667
+## Usage
+
+Build and Run:
+
+``` shell
+docker-compose up
+```
+
+Watch the logs:
+
+``` shell
+tail -F var/log/*.log
 ```
